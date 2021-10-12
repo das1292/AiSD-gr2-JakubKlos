@@ -6,4 +6,5 @@ def foo(text):
             return False
     return True
 x = input()
-print("1 " if(foo(x)) else "0")
+print("1" if(foo(x)) else "0")
+
