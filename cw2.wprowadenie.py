@@ -16,8 +16,7 @@ class house:
         return 8
 
     def __str__(self)-> str:
-        return f'liczba drzwi:{self.doors}'
-        f'Kolor:'{self.color}'
+        return f'liczba drzwi: {self.doors}''\n'f'Kolor: {self.color}'
 
 green_house: house = house(doors=15, color="green")
 print(green_house.doors)
