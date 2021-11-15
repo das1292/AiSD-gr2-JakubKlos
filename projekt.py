@@ -207,7 +207,7 @@ class Queue:
         self._storage.append(element)
 
     def dequeue(self) -> Any:
-        self._storage.pop()
+        return self._storage.pop()
 
 queue = Queue()
 assert len(queue) == 0
