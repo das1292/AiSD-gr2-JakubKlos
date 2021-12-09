@@ -1,4 +1,4 @@
-from typing import Any, Callable, List
+from typing import Any, Callable
 from BinaryNode import BinaryNode
 
 class BinaryTree:
