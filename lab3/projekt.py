@@ -108,33 +108,32 @@ class LinkedList:
 
 list_ = LinkedList()
 assert list_.head == None
-print(list_)
+
 
 
 list_.push(1)
 list_.push(0)
 assert str(list_) == '0 -> 1'
-print(list_)
 list_.append(9)
 list_.append(10)
-print(list_)
+
 assert str(list_) == '0 -> 1 -> 9 -> 10'
 middle_node = list_.node(at=1)
 list_.insert(5, after=middle_node)
-print(list_)
+
 assert str(list_) == '0 -> 1 -> 5 -> 9 -> 10'
 first_element = list_.node(at=0)
 returned_first_element = list_.pop()
-print(list_)
+
 assert first_element.value == returned_first_element
 last_element = list_.node(at=3)
 returned_last_element = list_.remove_last()
-print(list_)
+
 assert last_element.value == returned_last_element
 assert str(list_) == '1 -> 5 -> 9'
 second_node = list_.node(at=2)
 list_.remove(second_node)
-print(list_)
+
 assert str(list_) == '1 -> 5'
 
 class Stack:
@@ -164,19 +163,19 @@ class Stack:
 
 stack = Stack()
 assert len(stack) == 0
-print(stack)
+
 
 stack.push(3)
 stack.push(10)
 stack.push(1)
-print(stack)
+
 assert len(stack) == 3
 
 top_value = stack.pop()
-print(stack)
+
 assert top_value == 1
 
-print(stack)
+
 assert len(stack) == 2
 
 class Queue:
@@ -211,18 +210,15 @@ class Queue:
 
 queue = Queue()
 assert len(queue) == 0
-print(queue)
 
 
 queue.enqueue('klient1')
 queue.enqueue('klient2')
 queue.enqueue('klient3')
-print(queue)
 assert str(queue) == 'klient1, klient2, klient3'
 
-print(len(queue))
+
 client_first = queue.dequeue()
-print(queue)
 assert client_first == 'klient1'
 assert str(queue) == 'klient2, klient3'
 assert len(queue) == 2
